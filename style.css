@@ -80,7 +80,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   background: linear-gradient(to bottom, #1f1f1f, #000);
   padding: 20px;
   gap: 20px;
