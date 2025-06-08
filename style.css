@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: capitalize;
+}
+
+body {
+  background: #1a1a1a;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.totem {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* === OFERTA DA SEMANA === */
+.oferta {
+  width: 25%;
+  background: linear-gradient(to bottom, #5e4c2e, #2f2b1f);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 4px solid #ffe600;
+}
+
+.oferta h2 {
+  background: #d00000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  box-shadow: 0 0 10px #000;
+}
+
+.oferta-img {
+  background: #ffe600;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.oferta-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.oferta-desc h3 {
+  color: #d00000;
+  font-size: 1.7rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px #000;
+}
+
+.oferta-desc .preco {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d00000;
+}
+
+.oferta-desc .preco span {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+/* === TABELAS === */
+.tabelas {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: flex-start; */
+  background: linear-gradient(to bottom, #1f1f1f, #000);
+  padding: 20px;
+  gap: 20px;
+}
+
+.tabela {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px #000;
+}
+
+.tabela h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  background: #ffe600;
+  color: #000;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #000;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.3rem;
+}
+
+td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #444;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+td:last-child {
+  text-align: right;
+  color: #ffe600;
+  font-weight: bold;
+}
+
+/* === SLIDE LOGO === */
+.logo-slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-slide.active {
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-grande {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.relogio {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
