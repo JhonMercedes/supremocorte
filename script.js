@@ -1,5 +1,3 @@
-window.location.reload(true);
-
 const bovinos = [
   { nome: "Picanha", preco: 89.90 },
   { nome: "Filé Mignon", preco: 65.90 },
