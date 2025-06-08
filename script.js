@@ -33,7 +33,7 @@ const aves = [
   { nome: "Tulipa", preco: 33.00 },
   { nome: "Coxa", preco: 15.90 },
   { nome: "Peito c/osso", preco: 24.70 },
-  { nome: "Fila de Peito", preco: 27.00 },
+  { nome: "File de Peito", preco: 27.00 },
   { nome: "FR Passarinho", preco: 20.00 },
   { nome: "Sobrecoxa", preco: 17.90 },
   { nome: "Coxinha", preco: 26.90 },
