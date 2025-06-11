@@ -63,7 +63,7 @@ const promocoes = [
   { nome: "LINGUIÇA", preco: 31.90, imagem: "./imagens/linguica.png" },
   { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.png" },
   { nome: "PAPADA", preco: 13.90, imagem: "./imagens/papada-suino.png" },
-  { nome: "PESCOÇO", preco: 22.90, imagem: "./imagens/pescoço-bovino.png" }
+  { nome: "PESCOÇO", preco: 22.90, imagem: "./imagens/pesco-bovino.png" }
 ];
 
 let index = 0;
