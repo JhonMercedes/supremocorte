@@ -23,7 +23,7 @@ const bovinos2 = [
   { nome: "Pescoço", preco: 26.00 },
   { nome: "Ossobuco", preco: 22.90 },
   { nome: "Rabada", preco: 35.90 },
-  { nome: "Costela Gaucha", preco: 33.50 },
+  { nome: "Costela Gaucha", preco: 35.50 },
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
   { nome: "Costela Minga", preco: 29.90 }
@@ -60,8 +60,10 @@ const suinos = [
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "TULIPA", preco: 25.90, imagem: "./imagens/tulipa-frango.png" },
-  { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.png" }
+  { nome: "LINGUIÇA", preco: 31.90, imagem: "./imagens/linguica.png" },
+  { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.png" },
+  { nome: "PAPADA", preco: 13.90, imagem: "./imagens/papada-suino.png" },
+  { nome: "PESCOÇO", preco: 22.90, imagem: "./imagens/pescoço-bovino.png" }
 ];
 
 let index = 0;
