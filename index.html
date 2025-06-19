@@ -11,24 +11,25 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
-
-  <!-- <header class="topo">
-    <img src="./imagens/logo-removebg.png" alt="Logo da Empresa" class="logo">
-  </header> -->
-
 
   <div class="totem">
     <div class="oferta">
       <h2>OFERTA DA SEMANA</h2>
       <div class="oferta-img">
         <img id="oferta-img" src="" alt="promocoes" />
-        <div class="oferta-desc">
-          <h3>BISTECA BOVINA</h3>
-          <p class="preco">18,90 <span>kg</span></p>
-        </div>
+      </div>
+      <div class="oferta-desc">
+        <h3>BISTECA BOVINA</h3>
+        <p class="preco">18,90 <span>kg</span></p>
+      </div>
+      <!-- QR Code -->
+      <div id="qrcode-fixo">
+        
+        <img src="./imagens/voteaqui.png" alt="QR Code" />
       </div>
     </div>
 
@@ -66,7 +67,18 @@
 
 
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
+<button id="btn-fullscreen" onclick="alternarTelaCheia()">
+   <!-- Ícone para entrar em tela cheia -->
+   <svg id="icone-entrar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24">
+    <path d="M7 14H5v5h5v-2H7v-3zm0-4h2V7h3V5H7v5zm10 0h-2V7h-3V5h5v5zm-2 4h2v3h-3v2h5v-5h-4z"/>
+  </svg>
+  <!-- Ícone para sair da tela cheia -->
+  <svg id="icone-sair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24" height="24" style="display: none;">
+    <path d="M16 14h2v5h-5v-2h3v-3zm-8 0H6v3h3v2H4v-5h4zm8-4h-3V7h-2v5h5V10zm-8 0H6V7h3V5H4v5h4z"/>
+  </svg>
+</button>
 
 </body>
 

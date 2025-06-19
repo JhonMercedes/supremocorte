@@ -10,11 +10,11 @@ const bovinos = [
   { nome: "Patinho Dianteiro", preco: 41.90 },
   { nome: "Patinho Trazeiro", preco: 37.90 },
   { nome: "Capa de Costela", preco: 37.90 },
-  { nome: "Acem", preco: 37.90 },
-  { nome: "Peito", preco: 39.90 }
+  { nome: "Acem", preco: 37.90 }
 ];
 
 const bovinos2 = [
+  { nome: "Peito", preco: 39.90 },
   { nome: "Paloma", preco: 39.00 },
   { nome: "Lagarto", preco: 39.00 },
   { nome: "Paleta", preco: 32.50 },
@@ -27,7 +27,7 @@ const bovinos2 = [
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
   { nome: "Costela Minga", preco: 29.90 }
-]
+];
 
 const aves = [
   { nome: "Tulipa", preco: 33.00 },
@@ -60,10 +60,10 @@ const suinos = [
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "LINGUIÇA", preco: 31.90, imagem: "./imagens/linguica.png" },
-  { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.png" },
-  { nome: "PAPADA", preco: 13.90, imagem: "./imagens/papada-suino.png" },
-  { nome: "PESCOÇO", preco: 22.90, imagem: "./imagens/pesco-bovino.png" }
+  { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.jpeg" },
+  { nome: "COXÃO MOLE", preco: 39.99, imagem: "./imagens/coxao.jpeg"},
+  { nome: "HAMBURGUER", preco: 37.90, imagem: "./imagens/burger_caseiro.jpeg" },
+  { nome: "PÉ DE GALINHA", preco: 15.50, imagem: "./imagens/pe-galinha.jpeg" }
 ];
 
 let index = 0;
@@ -93,7 +93,7 @@ preencherTabela("tabela-bovinos2", bovinos2);
 preencherTabela("tabela-suinos", suinos);
 preencherTabela("tabela-aves", aves);
 atualizarOferta();
-setInterval(atualizarOferta, 10000); // troca tabela oferta a cada 10s
+setInterval(atualizarOferta, 3000); // troca tabela oferta a cada 10s
 
 
 function atualizarRelogio() {
@@ -125,11 +125,88 @@ function alternarSlides() {
     document.querySelector(".logo-slide").style.display = "none";
     mostrandoProdutos = true;
 
-    setTimeout(alternarSlides, 45000); // Tabela por 45s
+    setTimeout(alternarSlides, 55000); // Tabela por 45s
   }
 }
 
 // Inicia a troca automática
 setTimeout(alternarSlides, 45000); // Começa com tabela por 45s
 
+// Adicionando botão para tela cheia
+function alternarTelaCheia() {
+  if (!document.fullscreenElement) {
+    const el = document.documentElement;
+    if (el.requestFullscreen) {
+      el.requestFullscreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    } else if (el.msRequestFullscreen) {
+      el.msRequestFullscreen();
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  }
+}
 
+// Atualiza o texto do botão de tela cheia
+document.addEventListener("fullscreenchange", () => {
+  const entrar = document.getElementById("icone-entrar");
+  const sair = document.getElementById("icone-sair");
+
+  if (document.fullscreenElement) {
+    entrar.style.display = "none";
+    sair.style.display = "inline";
+  } else {
+    entrar.style.display = "inline";
+    sair.style.display = "none";
+  }
+});
+
+
+let temporizadorEscondeBotao;
+
+// Mostrar botão de tela cheia
+function mostrarBotaoFullscreen() {
+  const btn = document.getElementById("btn-fullscreen");
+  btn.classList.remove("oculto");
+
+  clearTimeout(temporizadorEscondeBotao);
+  temporizadorEscondeBotao = setTimeout(() => {
+    btn.classList.add("oculto");
+  }, 5000); // 5 segundos
+}
+
+document.addEventListener("mousemove", mostrarBotaoFullscreen);
+document.addEventListener("touchstart", mostrarBotaoFullscreen);
+
+// Ocultar inicialmente após 5s do carregamento
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("btn-fullscreen").classList.add("oculto");
+  }, 5000);
+});
+
+let temporizadorEscondeCursor;
+
+function resetarCursor() {
+  document.body.classList.remove("ocultar-cursor");
+  clearTimeout(temporizadorEscondeCursor);
+
+  temporizadorEscondeCursor = setTimeout(() => {
+    document.body.classList.add("ocultar-cursor");
+  }, 3000); // 3 segundos de inatividade
+}
+
+document.addEventListener("mousemove", resetarCursor);
+document.addEventListener("touchstart", resetarCursor); // para garantir em telas sensíveis ao toque
+
+// Inicia o temporizador no carregamento da página
+window.addEventListener("load", () => {
+  resetarCursor();
+});

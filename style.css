@@ -13,6 +13,12 @@ body {
   overflow: hidden;
 }
 
+/* Ocultar cursor */
+body.ocultar-cursor {
+  cursor: none;
+}
+
+
 .totem {
   display: flex;
   flex-direction: row;
@@ -23,13 +29,16 @@ body {
 /* === OFERTA DA SEMANA === */
 .oferta {
   width: 25%;
-  background: linear-gradient(to bottom, #5e4c2e, #2f2b1f);
-  padding: 20px;
+  height: 100vh; /* ou altura fixa como 900px se preferir */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 20px;
+  background: linear-gradient(to bottom, #5e4c2e, #2f2b1f);
   border-right: 4px solid #ffe600;
+  box-sizing: border-box;
 }
+
 
 .oferta h2 {
   background: #d00000;
@@ -42,37 +51,54 @@ body {
 }
 
 .oferta-img {
-  background: #ffe600;
+  background: transparent;
   margin-top: 20px;
   padding: 15px;
   text-align: center;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  height: 220px; /* Altura fixa para manter a área constante */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Importante: evita vazamentos da imagem */
 }
 
 .oferta-img img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 Preenche 100% da div */
   border-radius: 10px;
 }
 
-.oferta-desc h3 {
-  color: #d00000;
-  font-size: 1.7rem;
+
+
+.oferta-desc {
   margin-top: 10px;
-  text-shadow: 1px 1px #000;
+  padding: 12px;
+  background: #ffe600c1;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  color: #fff;
 }
+
+.oferta-desc h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  margin-bottom: 8px;
+}
+
 
 .oferta-desc .preco {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: #d00000;
+  color: #d00000; /* Verde para o preço novo */
+  position: relative;
 }
 
-.oferta-desc .preco span {
-  font-size: 1.5rem;
-  color: #000;
-}
 
 /* === TABELAS === */
 .tabelas {
@@ -109,13 +135,13 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1.2rem; /*1.3*/
+  font-size: 1.5rem; /*1.3*/
 }
 
 td {
   padding: 10px 5px;
   border-bottom: 1px solid #444;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -168,5 +194,47 @@ td:last-child {
   text-align: center;
 }
 
+#btn-fullscreen {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+}
 
+#btn-fullscreen:hover {
+  opacity: 2;
+}
 
+#btn-fullscreen svg {
+  pointer-events: none;
+}
+
+#qrcode-fixo {
+  margin-top: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+}
+
+#qrcode-fixo img {
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}

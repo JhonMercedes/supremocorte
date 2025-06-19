@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Totem Açougue (Mobile – Tabelas)</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonte Titillium Web (igual ao desktop) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ===========================
+   Estilos específicos para mobile
+   =========================== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+  height: 100%;
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  height: 100vh;          /* ocorra a altura total da tela */
+  overflow-y: auto;       /* habilita scroll vertical */
+  box-sizing: border-box;
+}
+
+.mobile-tabela {
+  width: 90%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.mobile-tabela h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.mobile-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+.mobile-tabela td {
+  padding: 8px 5px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+}
+
+.mobile-tabela td:first-child {
+  text-align: left;
+}
+
+.mobile-tabela td:last-child {
+  text-align: right;
+  color: #ffe600;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Bovinos, primeira metade -->
+    <div class="mobile-tabela">
+      <h2>Bovinos</h2>
+      <table id="tabela-bovinos"></table>
+    </div>
+
+    <!-- Bovinos, segunda metade -->
+    <div class="mobile-tabela">
+      <h2></h2>
+      <table id="tabela-bovinos2"></table>
+    </div>
+
+    <!-- Suínos -->
+    <div class="mobile-tabela">
+      <h2>Suínos</h2>
+      <table id="tabela-suinos"></table>
+    </div>
+
+    <!-- Aves -->
+    <div class="mobile-tabela">
+      <h2>Aves</h2>
+      <table id="tabela-aves"></table>
+    </div>
+  </div>
+
+  <script src="script_mobile.js"></script>
+</body>
+</html>
