@@ -7,41 +7,43 @@ const bovinos = [
   { nome: "Contra File", preco: 59.90 },
   { nome: "Fraldinha", preco: 48.50 },
   { nome: "Cupim", preco: 55.90 },
-  { nome: "Patinho Dianteiro", preco: 41.90 },
-  { nome: "Patinho Trazeiro", preco: 37.90 },
+  { nome: "Patinho Dian.", preco: 41.90 },
+  { nome: "Patinho Traz.", preco: 37.90 },
   { nome: "Capa de Costela", preco: 37.90 },
-  { nome: "Acem", preco: 37.90 }
+  { nome: "Acem", preco: 36.90 },
+  { nome: "Peito", preco: 39.90 }
 ];
 
 const bovinos2 = [
-  { nome: "Peito", preco: 39.90 },
   { nome: "Paloma", preco: 39.00 },
   { nome: "Lagarto", preco: 39.00 },
-  { nome: "Paleta", preco: 32.50 },
-  { nome: "Peixinho", preco: 36.50 },
+  { nome: "Paleta", preco: 31.50 },
+  { nome: "Peixinho", preco: 34.90 },
   { nome: "Musculo", preco: 26.50 },
-  { nome: "Pescoço", preco: 26.00 },
+  { nome: "Pescoço", preco: 24.90 },
   { nome: "Ossobuco", preco: 22.90 },
-  { nome: "Rabada", preco: 35.90 },
-  { nome: "Costela Gaucha", preco: 35.50 },
+  { nome: "Rabada", preco: 32.90 },
+  { nome: "Gaucha", preco: 33.50 },
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
-  { nome: "Costela Minga", preco: 29.90 }
+  { nome: "Costela Minga", preco: 29.90 },
+  { nome: "Coxão Mole", preco: 41.90 }
 ];
 
 const aves = [
-  { nome: "Tulipa", preco: 33.00 },
+  { nome: "Tulipa", preco: 32.00 },
   { nome: "Coxa", preco: 15.90 },
   { nome: "Peito c/osso", preco: 24.70 },
   { nome: "File de Peito", preco: 27.00 },
   { nome: "FR Passarinho", preco: 20.00 },
   { nome: "Sobrecoxa", preco: 17.90 },
   { nome: "Coxinha", preco: 26.90 },
-  // { nome: "Moela", preco: 8.75 },
   { nome: "Coração", preco: 37.00 },
   { nome: "Ling C/Queijo", preco: 25.50 },
   { nome: "Ling C/Bacon", preco: 25.50 },
-  { nome: "Ling FR Ervas", preco: 26.50 }
+  { nome: "Ling FR Ervas", preco: 26.50 },
+  { nome: "Coxa C/Sobrecoxa", preco: 14.90 },
+  { nome: "Frango Inteiro", preco: 10.80 }
 ];
 
 const suinos = [
@@ -52,18 +54,18 @@ const suinos = [
   { nome: "Costelinha", preco: 32.00 },
   { nome: "Suã", preco: 17.90 },
   { nome: "Bisteca", preco: 22.00 },
-  { nome: "Panceta", preco: 26.50},
-  { nome: "Toucinho", preco: 15.00 },
+  { nome: "Panceta", preco: 22.90},
+  { nome: "Toucinho", preco: 14.00 },
   { nome: "Papada", preco: 15.90 },
   { nome: "Linguiça", preco: 33.00 }
 ];
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "RABADA", preco: 32.90, imagem: "./imagens/rabada-bovina.jpeg" },
-  { nome: "COXÃO MOLE", preco: 39.99, imagem: "./imagens/coxao.jpeg"},
-  { nome: "HAMBURGUER", preco: 37.90, imagem: "./imagens/burger_caseiro.jpeg" },
-  { nome: "PÉ DE GALINHA", preco: 15.50, imagem: "./imagens/pe-galinha.jpeg" }
+  { nome: "PANCETA", preco: 22.90, imagem: "./imagens/panceta.jpeg" },
+  { nome: "TOSCANA BOVINA", preco: 21.99, imagem: "./imagens/toscana-bovina.jpeg"},
+  { nome: "COSTELA RIPA", preco: 22.00, imagem: "./imagens/costela-ripa.jpeg" },
+  { nome: "PÉ FRANGO C/UNHA", preco: 14.00, imagem: "./imagens/pe-galinha.jpeg" }
 ];
 
 let index = 0;
