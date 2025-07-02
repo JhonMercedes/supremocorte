@@ -10,28 +10,28 @@ const bovinos = [
   { nome: "Patinho Dian.", preco: 41.90 },
   { nome: "Patinho Traz.", preco: 37.90 },
   { nome: "Capa de Costela", preco: 37.90 },
-  { nome: "Acem", preco: 36.90 },
+  { nome: "Acem", preco: 37.00 },
   { nome: "Peito", preco: 39.90 }
 ];
 
 const bovinos2 = [
   { nome: "Paloma", preco: 39.00 },
   { nome: "Lagarto", preco: 39.00 },
-  { nome: "Paleta", preco: 31.50 },
-  { nome: "Peixinho", preco: 34.90 },
+  { nome: "Paleta", preco: 32.50 },
+  { nome: "Peixinho", preco: 33.90 },
   { nome: "Musculo", preco: 26.50 },
   { nome: "Pescoço", preco: 24.90 },
-  { nome: "Ossobuco", preco: 22.90 },
+  { nome: "Ossobuco", preco: 23.90 },
   { nome: "Rabada", preco: 32.90 },
   { nome: "Gaucha", preco: 33.50 },
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
   { nome: "Costela Minga", preco: 29.90 },
-  { nome: "Coxão Mole", preco: 41.90 }
+  { nome: "Coxão Mole", preco: 43.50 }
 ];
 
 const aves = [
-  { nome: "Tulipa", preco: 32.00 },
+  { nome: "Tulipa", preco: 33.00 },
   { nome: "Coxa", preco: 15.90 },
   { nome: "Peito c/osso", preco: 24.70 },
   { nome: "File de Peito", preco: 27.00 },
@@ -42,7 +42,7 @@ const aves = [
   { nome: "Ling C/Queijo", preco: 25.50 },
   { nome: "Ling C/Bacon", preco: 25.50 },
   { nome: "Ling FR Ervas", preco: 26.50 },
-  { nome: "Coxa C/Sobrecoxa", preco: 14.90 },
+  { nome: "Coxa C/Sobrecoxa", preco: 15.90 },
   { nome: "Frango Inteiro", preco: 10.80 }
 ];
 
@@ -53,19 +53,20 @@ const suinos = [
   { nome: "Capa Lombo", preco: 31.00 },
   { nome: "Costelinha", preco: 32.00 },
   { nome: "Suã", preco: 17.90 },
-  { nome: "Bisteca", preco: 22.00 },
-  { nome: "Panceta", preco: 22.90},
-  { nome: "Toucinho", preco: 14.00 },
-  { nome: "Papada", preco: 15.90 },
-  { nome: "Linguiça", preco: 33.00 }
+  { nome: "Bisteca", preco: 22.90 },
+  { nome: "Panceta", preco: 26.90},
+  { nome: "Toucinho", preco: 14.90 },
+  { nome: "Papada", preco: 14.90 },
+  { nome: "Linguiça", preco: 35.00 }
 ];
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "PANCETA", preco: 22.90, imagem: "./imagens/panceta.jpeg" },
-  { nome: "TOSCANA BOVINA", preco: 21.99, imagem: "./imagens/toscana-bovina.jpeg"},
-  { nome: "COSTELA RIPA", preco: 22.00, imagem: "./imagens/costela-ripa.jpeg" },
-  { nome: "PÉ FRANGO C/UNHA", preco: 14.00, imagem: "./imagens/pe-galinha.jpeg" }
+  { nome: "PANCETA", preco: 24.90, imagem: "./imagens/panceta.jpeg" },
+  { nome: "TOSCANA BOVINA", preco: 19.90, imagem: "./imagens/toscana-bovina.jpeg"},
+  { nome: "TULIPA", preco: 31.90, imagem: "./imagens/tulipa-frango.png"},
+  { nome: "PÉ FRANGO C/UNHA", preco: 14.00, imagem: "./imagens/pe-galinha.jpeg" },
+  { nome: "CUPIM MATURADO", preco: 62.90, imagem: "./imagens/cupim-maturado.jpeg" },
 ];
 
 let index = 0;
@@ -107,7 +108,7 @@ function atualizarRelogio() {
   document.getElementById("hora").textContent = hora;
 }
 
-// Atualiza o relógio a cada segundo
+// Atualiza o relogio a cada segundo
 setInterval(atualizarRelogio, 1000);
 atualizarRelogio();
 
@@ -131,10 +132,10 @@ function alternarSlides() {
   }
 }
 
-// Inicia a troca automática
-setTimeout(alternarSlides, 45000); // Começa com tabela por 45s
+// Inicia a troca automatica
+setTimeout(alternarSlides, 45000); // começa com tabela por 45s
 
-// Adicionando botão para tela cheia
+// Adicionando botao para tela cheia
 function alternarTelaCheia() {
   if (!document.fullscreenElement) {
     const el = document.documentElement;
@@ -156,7 +157,7 @@ function alternarTelaCheia() {
   }
 }
 
-// Atualiza o texto do botão de tela cheia
+// Atualiza o texto do botao de tela cheia
 document.addEventListener("fullscreenchange", () => {
   const entrar = document.getElementById("icone-entrar");
   const sair = document.getElementById("icone-sair");
@@ -173,7 +174,7 @@ document.addEventListener("fullscreenchange", () => {
 
 let temporizadorEscondeBotao;
 
-// Mostrar botão de tela cheia
+// Mostrar botao de tela cheia
 function mostrarBotaoFullscreen() {
   const btn = document.getElementById("btn-fullscreen");
   btn.classList.remove("oculto");
@@ -187,7 +188,7 @@ function mostrarBotaoFullscreen() {
 document.addEventListener("mousemove", mostrarBotaoFullscreen);
 document.addEventListener("touchstart", mostrarBotaoFullscreen);
 
-// Ocultar inicialmente após 5s do carregamento
+// Ocultar inicialmente apos 5s do carregamento
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("btn-fullscreen").classList.add("oculto");
@@ -206,9 +207,9 @@ function resetarCursor() {
 }
 
 document.addEventListener("mousemove", resetarCursor);
-document.addEventListener("touchstart", resetarCursor); // para garantir em telas sensíveis ao toque
+document.addEventListener("touchstart", resetarCursor); // para garantir em telas sensÃ­veis ao toque
 
-// Inicia o temporizador no carregamento da página
+// Inicia o temporizador no carregamento da pagina
 window.addEventListener("load", () => {
   resetarCursor();
 });
