@@ -57,7 +57,7 @@ body.ocultar-cursor {
   text-align: center;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  height: 220px; /* Altura fixa para manter a área constante */
+  height: 220px; /* Altura fixa para manter a Ã¡rea constante */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +67,7 @@ body.ocultar-cursor {
 .oferta-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 🔥 Preenche 100% da div */
+  object-fit: cover; /* ð¥ Preenche 100% da div */
   border-radius: 10px;
 }
 
@@ -95,7 +95,7 @@ body.ocultar-cursor {
 .oferta-desc .preco {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #d00000; /* Verde para o preço novo */
+  color: #d00000; /* Verde para o preÃ§o novo */
   position: relative;
 }
 
