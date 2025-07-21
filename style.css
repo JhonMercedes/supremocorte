@@ -57,7 +57,7 @@ body.ocultar-cursor {
   text-align: center;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  height: 220px; /* Altura fixa para manter a Ã¡rea constante */
+  height: 350px; /* Altura fixa para manter a Ã¡rea constante */
   display: flex;
   align-items: center;
   justify-content: center;
