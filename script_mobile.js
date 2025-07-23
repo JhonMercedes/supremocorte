@@ -28,12 +28,12 @@ const bovinos2 = [
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
   { nome: "Costela Minga", preco: 29.90 },
-  { nome: "Coxão Mole", preco: 39.90 }
+  { nome: "Coxão Mole", preco: 41.90 }
 ];
 
 const aves = [
   { nome: "Tulipa", preco: 33.00 },
-  { nome: "Coxa", preco: 15.90 },
+  { nome: "Coxa", preco: 22.00 },
   { nome: "Peito c/osso", preco: 24.70 },
   { nome: "File de Peito", preco: 27.00 },
   { nome: "FR Passarinho", preco: 22.00 },
