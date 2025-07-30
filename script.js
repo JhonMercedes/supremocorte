@@ -63,6 +63,7 @@ const suinos = [
 
 // Produtos em promoção (com imagens)
 const promocoes = [
+  { nome: "TULIPA", preco: 29.90, imagem: "./imagens/tulipa.png" },
   { nome: "COSTELA RIPA", preco: 22.50, imagem: "./imagens/costela-ripa.jpeg" },
   { nome: "LINGUIÇA MISTA", preco: 19.90, imagem: "./imagens/toscana-bovina.jpeg"},
   { nome: "PICANHA DA CASA", preco: 79.90, imagem: "./imagens/picanha.jpeg" },
