@@ -25,29 +25,76 @@ body.ocultar-cursor {
   height: 100vh;
   width: 100vw;
 }
-
+/* == TABELAS == */
+.tabelas {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  height: calc(100vh - 80px);
+  background: #1a1a1a;
+  align-items: stretch;
+}
 /* === OFERTA DA SEMANA === */
 .oferta {
-  width: 25%;
-  height: 100vh; /* ou altura fixa como 900px se preferir */
+  flex: 1;
+  background: #e91d1d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.2);
+  border: none;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+}
+
+.tabela {
+  flex: 1;
+  gap: 15px;
   padding: 20px;
-  background: linear-gradient(to bottom, #5e4c2e, #2f2b1f);
-  border-right: 4px solid #ffe600;
-  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px #000;
+}
+
+
+
+.tabela-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #FFE600;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.oferta .tabela-header {
+  background: #fff;
+  color: #d32f2f;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.categoria-icon {
+  font-size: 3rem;
 }
 
 
 .oferta h2 {
-  background: #d00000;
-  color: #fff;
+  color: #d00000;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  font-size: 1.8em;
-  box-shadow: 0 0 10px #000;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 .oferta-img {
@@ -76,7 +123,8 @@ body.ocultar-cursor {
 .oferta-desc {
   margin-top: 10px;
   padding: 12px;
-  background: #ffe600c1;
+  background: transparent;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
   text-shadow: 2px 2px 2px #000;
   text-align: center;
@@ -86,7 +134,7 @@ body.ocultar-cursor {
 .oferta-desc h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #FFF;
   text-shadow: 2px 2px 2px #000;
   margin-bottom: 8px;
 }
@@ -95,41 +143,18 @@ body.ocultar-cursor {
 .oferta-desc .preco {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #d00000; /* Verde para o preÃ§o novo */
+  color: #FFE600; /* Verde para o preÃ§o novo */
   position: relative;
-}
-
-
-/* === TABELAS === */
-.tabelas {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  /* align-items: flex-start; */
-  background: linear-gradient(to bottom, #1f1f1f, #000);
-  padding: 20px;
-  gap: 20px;
-}
-
-.tabela {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-  border-radius: 15px;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 10px #000;
 }
 
 .tabela h2 {
   text-align: center;
-  font-size: 1.5rem; /*1.6*/
+  font-size: 2rem; /*1.6*/
   margin-bottom: 10px;
   background: #ffe600;
   color: #000;
   padding: 6px; /*8px*/
   border-radius: 6px; /*8px*/
-  box-shadow: 0 2px 4px #000;
 }
 
 table {
@@ -143,7 +168,7 @@ td {
   border-bottom: 1px solid #444;
   font-size: 1.3rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 td:first-child {
@@ -189,9 +214,19 @@ td:last-child {
 }
 
 .relogio {
-  color: #fff;
+  color: #333;
   font-size: 3rem;
   text-align: center;
+}
+
+.relogio #data {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.relogio #hora {
+  color: #8b4513;
+  font-weight: 700;
 }
 
 #btn-fullscreen {

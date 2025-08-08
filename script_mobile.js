@@ -33,7 +33,7 @@ const bovinos2 = [
 
 const aves = [
   { nome: "Tulipa", preco: 33.00 },
-  { nome: "Coxa", preco: 22.00 },
+  { nome: "Coxa", preco: 18.50 },
   { nome: "Peito c/osso", preco: 24.70 },
   { nome: "File de Peito", preco: 27.00 },
   { nome: "FR Passarinho", preco: 22.00 },
@@ -43,7 +43,7 @@ const aves = [
   { nome: "Ling C/Queijo", preco: 25.50 },
   { nome: "Ling C/Bacon", preco: 25.50 },
   { nome: "Ling FR Ervas", preco: 26.50 },
-  { nome: "Coxa C/Sobrecoxa", preco: 14.90 },
+  { nome: "Coxa C/Sobrecoxa", preco: 15.90 },
   { nome: "Frango Inteiro", preco: 11.99 }
 ];
 
@@ -61,7 +61,6 @@ const suinos = [
   { nome: "Ling C/Pimenta", preco: 33.90 },
   { nome: "Ling S/Pimenta", preco: 33.00 }
 ];
-
 
 /**
  * Preenche uma tabela a partir do id e de um array de produtos.

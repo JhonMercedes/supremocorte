@@ -32,7 +32,7 @@ const bovinos2 = [
 
 const aves = [
   { nome: "Tulipa", preco: 33.00 },
-  { nome: "Coxa", preco: 22.00 },
+  { nome: "Coxa", preco: 18.50 },
   { nome: "Peito c/osso", preco: 24.70 },
   { nome: "File de Peito", preco: 27.00 },
   { nome: "FR Passarinho", preco: 22.00 },
@@ -42,7 +42,7 @@ const aves = [
   { nome: "Ling C/Queijo", preco: 25.50 },
   { nome: "Ling C/Bacon", preco: 25.50 },
   { nome: "Ling FR Ervas", preco: 26.50 },
-  { nome: "Coxa C/Sobrecoxa", preco: 14.90 },
+  { nome: "Coxa C/Sobrecoxa", preco: 15.90 },
   { nome: "Frango Inteiro", preco: 11.99 }
 ];
 
@@ -63,12 +63,12 @@ const suinos = [
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "TULIPA", preco: 29.90, imagem: "./imagens/tulipa.png" },
   { nome: "COSTELA RIPA", preco: 22.50, imagem: "./imagens/costela-ripa.jpeg" },
   { nome: "LINGUIÇA MISTA", preco: 19.90, imagem: "./imagens/toscana-bovina.jpeg"},
-  { nome: "PICANHA DA CASA", preco: 79.90, imagem: "./imagens/picanha.jpeg" },
+  { nome: "COXÃO MOLE", preco: 39.90, imagem: "./imagens/coxao.jpeg" },
   { nome: "FRANGO INTEIRO", preco: 9.90, imagem: "./imagens/frango-inteiro.jpeg" },
-  { nome: "CUPIM MATURADO", preco: 59.90, imagem: "./imagens/cupim-maturado.jpeg" }
+  { nome: "CUPIM MATURADO", preco: 59.90, imagem: "./imagens/cupim-maturado.jpeg" },
+  { nome: "LUINGUIÇA SUINA", preco: 31.90, imagem: "./imagens/ling-suina.jpeg" }
 ];
 
 let index = 0;
