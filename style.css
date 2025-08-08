@@ -32,7 +32,6 @@ body.ocultar-cursor {
   flex-direction: row;
   gap: 15px;
   padding: 20px;
-  height: calc(100vh - 80px);
   background: #1a1a1a;
   align-items: stretch;
 }
@@ -58,7 +57,10 @@ body.ocultar-cursor {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 10px #000;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -166,7 +168,7 @@ table {
 td {
   padding: 10px 5px;
   border-bottom: 1px solid #444;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
 }
