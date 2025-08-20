@@ -1,6 +1,6 @@
 const bovinos = [
   { nome: "Picanha", preco: 89.90 },
-  { nome: "Filé Mignon", preco: 62.90 },
+  { nome: "Filé Mignon", preco: 63.90 },
   { nome: "Alcatra", preco: 52.00 },
   { nome: "Lombo", preco: 49.00 },
   { nome: "Maminha", preco: 52.00 },
@@ -22,12 +22,12 @@ const bovinos2 = [
   { nome: "Musculo", preco: 26.50 },
   { nome: "Pescoço", preco: 25.90 },
   { nome: "Ossobuco", preco: 23.90 },
-  { nome: "Rabada", preco: 32.90 },
+  { nome: "Rabada", preco: 33.90 },
   { nome: "Gaucha", preco: 35.50 },
   { nome: "Costela Ripa", preco: 23.50 },
   { nome: "Ponta de Agulha", preco: 24.90 },
   { nome: "Costela Minga", preco: 29.90 },
-  { nome: "Coxão Mole", preco: 41.90 }
+  { nome: "Coxão Mole", preco: 43.50 }
 ];
 
 const aves = [
@@ -47,28 +47,26 @@ const aves = [
 ];
 
 const suinos = [
-  { nome: "Pernil S/Osso", preco: 23.50 },
-  { nome: "Pernil C/Osso", preco: 22.50 },
+  { nome: "Pernil S/Osso", preco: 23.90 },
+  { nome: "Pernil C/Osso", preco: 22.90 },
   { nome: "Lombo", preco: 30.00 },
   { nome: "Capa Lombo", preco: 31.00 },
   { nome: "Costelinha", preco: 33.00 },
   { nome: "Suã", preco: 17.90 },
   { nome: "Bisteca", preco: 22.00 },
   { nome: "Panceta", preco: 26.90},
-  { nome: "Toucinho", preco: 15.00 },
-  { nome: "Papada", preco: 16.00 },
+  { nome: "Toucinho", preco: 16.00 },
+  { nome: "Papada", preco: 17.00 },
   { nome: "Ling C/Pimenta", preco: 33.90 },
   { nome: "Ling S/Pimenta", preco: 33.00 }
 ];
 
 // Produtos em promoção (com imagens)
 const promocoes = [
-  { nome: "COSTELA RIPA", preco: 22.50, imagem: "./imagens/costela-ripa.jpeg" },
-  { nome: "LINGUIÇA MISTA", preco: 19.90, imagem: "./imagens/toscana-bovina.jpeg"},
-  { nome: "COXÃO MOLE", preco: 39.90, imagem: "./imagens/coxao.jpeg" },
-  { nome: "FRANGO INTEIRO", preco: 9.90, imagem: "./imagens/frango-inteiro.jpeg" },
-  { nome: "CUPIM MATURADO", preco: 59.90, imagem: "./imagens/cupim-maturado.jpeg" },
-  { nome: "LUINGUIÇA SUINA", preco: 31.90, imagem: "./imagens/ling-suina.jpeg" }
+  { nome: "OSSOBUCO", preco: 21.90, imagem: "./imagens/ossobuco.jpeg" },
+  { nome: "LINGUIÇA DE COSTELA", preco: 29.90, imagem: "./imagens/ling-artesanal.jpeg"},
+  { nome: "BISTECA SUINA", preco: 20.50, imagem: "./imagens/bisteca-suina.jpeg" },
+  { nome: "BACON MANTA", preco: 32.90, imagem: "./imagens/bacon.jpeg" }
 ];
 
 let index = 0;
